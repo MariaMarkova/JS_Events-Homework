@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+
+
+canvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: transparent;
+}
+
+.button {
+	position: absolute;
+	top: 0px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+button {
+	background-color: transparent;
+	border-radius: 5px;
+	height: 25px;
+	width: 55px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+button:HOVER {
+	background-color: orange;
+	border-radius: 5px;
+	font-style: italic;
+}
+			
+#background-game {
+	background-color: #CAE1FF;
+	z-index: -1;
+}
+
+#tank {
+	position: absolute;
+	top: 300px;
+	z-index: 0;
+}
+
+#target {
+	position: absolute;
+	/*top: 0px;
+	left: 430px;*/
+	z-index: 0;
+}
+
+.score {
+	position: absolute;
+	top: 5px;
+	left: 480px;
+	color: #000080;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	cursor: default;
+}
+
+.bullets {
+	position: absolute;
+	top: 25px;
+	left: 480px;
+	color: #000080;
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	cursor: default;
+}
+
+.game-over {
+	position: absolute;
+	top: 100px;
+	left: 210px;
+	color: #FF7F00;
+	font-family: Helvetica, sans-serif;
+	font-size: 30px;
+	cursor: default;
+	display: none;
+}
+
+.game-over span {
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	left: 50px;
+}
+
+.game-over span:hover {
+	color: #FFD700;
+}
+
+.loading {
+	position: absolute;
+	top: 100px;
+	left: 210px;
+	color: #000080;
+	font-family: 'Arial, Helvetica', sans-serif;
+	font-size: 30px;
+	cursor: default;
+}

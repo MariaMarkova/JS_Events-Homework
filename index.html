@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>GAME</title>
+	
+	<link type="text/css" href="assets/css/reset.css" rel="stylesheet"></link>
+	<link type="text/css" href="assets/css/style.css" rel="stylesheet"></link>
+	
+	
+	</head>
+	
+	<body>
+	
+		<canvas id="background-game" width="600" height="360"></canvas>
+		
+		<div id="target">
+			<img alt="target" src="assets/images/target2.png" width="50px" height="50px">
+		</div>
+		
+		<div id="tank">
+			<img alt="tank" src="assets/images/tank.png" width="50px" height="50px">
+		</div>
+		
+		<div class="score">SCORE: <span id="score"></span></div>		
+		<div class="bullets">BULLETS: <span id="bullets"></span></div>
+			
+		<div class="game-over" id="game-over">GAME OVER<p><span onclick="game.restart()">Restart</span></p></div>
+		
+		
+		<div class="button">
+			<button type="button" id="start">Start</button>
+			<button type="button" id="restart">Restart</button>
+			<button type="button" id="stop">Stop</button>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="target.js"></script>
+</html>
